@@ -1,0 +1,12 @@
+name: manual_dispatch
+
+on: 
+  workflow_dispatch:
+  
+jobs:
+  testjob: 
+    runs-on: ubuntu:latest
+    steps:
+      - name: test job
+        id: test-id
+        run: echo "Hi from manual run"
